@@ -1,0 +1,6 @@
+version=1
+id=2970602033
+title=Zombie Kids
+description=This is a test for adding new items.
+tags=Build 41;Misc
+visibility=public
