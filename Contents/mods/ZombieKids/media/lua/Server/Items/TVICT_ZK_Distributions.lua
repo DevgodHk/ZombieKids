@@ -1,0 +1,23 @@
+require 'Items/ProceduralDistributions'
+require 'Items/SuburbsDistributions'
+
+table.insert(ProceduralDistributions.list["RandomFiller"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["RandomFiller"].items, 0.1);
+table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, 0.2);
+table.insert(ProceduralDistributions.list["CrateRandomJunk"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["CrateRandomJunk"].items, 0.2);
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["ClassroomDesk"].items, 1);
+table.insert(ProceduralDistributions.list["WardrobeChild"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["WardrobeChild"].items, 1);
+table.insert(ProceduralDistributions.list["CrateToys"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["CrateToys"].items, 1);
+table.insert(ProceduralDistributions.list["GigamartToys"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["GigamartToys"].items, 1);
+table.insert(ProceduralDistributions.list["SchoolLockers"].items, "TVICT_ZK.Bag_KidsFannyPackFront");
+table.insert(ProceduralDistributions.list["SchoolLockers"].items, 1);
+table.insert(SuburbsDistributions.all.inventorymale.items, "TVICT_ZK.Bag_KidsFannyPackFront")
+table.insert(SuburbsDistributions.all.inventorymale.items, 0.1)
+table.insert(SuburbsDistributions.all.inventoryfemale.items, "TVICT_ZK.Bag_KidsFannyPackFront")
+table.insert(SuburbsDistributions.all.inventoryfemale.items, 0.1)

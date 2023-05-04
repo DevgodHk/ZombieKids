@@ -1,0 +1,25 @@
+module TVICT_ZK {
+
+    imports {
+        Base
+        TVICT_ZK
+    }
+/*************RECIPES*******************/
+
+recipe Combine improvised surgeon kit
+	{
+		Nails,
+		Thread=3,
+
+		Result: Improvised_surgeon_kit,
+		Time: 30.0,
+		NeedToBeLearn: false,
+		CanBeDoneFromFloor: false,
+		OnGiveXP: NoXP_OnGiveXP,
+		SkillRequired: FirstAid=2,
+		Category: Surgeon,
+		Tooltip: Recipe_Tooltip_Improvised_surgeon_kit,
+		NeedToBeLearn: true,
+	}
+	
+}
