@@ -1,0 +1,28 @@
+module TVICT_ZK {
+
+    imports {
+        Base
+    }
+
+    item Jacket_Dante
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Dante Jacket,
+        ClothingItem = Jacket_Dante,
+        BodyLocation = Jacket,
+        Icon = JacketPolice,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.98,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.6,
+        WindResistance = 0.45,
+        FabricType = Cotton,
+        WaterResistance = 0.25,
+        Weight = 2,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+}

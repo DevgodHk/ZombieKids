@@ -4,22 +4,54 @@ module TVICT_ZK {
         Base
         TVICT_ZK
     }
-/*************RECIPES*******************/
+	/*************RECIPES*******************/
 
-recipe Combine improvised surgeon kit
+	recipe Craft Masamune
 	{
-		Nails,
-		Thread=3,
+		MasamuneHandle,
+		Katana=2,
 
-		Result: Improvised_surgeon_kit,
-		Time: 30.0,
-		NeedToBeLearn: false,
-		CanBeDoneFromFloor: false,
-		OnGiveXP: NoXP_OnGiveXP,
-		SkillRequired: FirstAid=2,
-		Category: Surgeon,
-		Tooltip: Recipe_Tooltip_Improvised_surgeon_kit,
+		NearItem:Anvil,
+		Result: Masamune,
+		Time: 50.0,
+		OnGiveXP: Recipe.OnGiveXP.Blacksmith25,
+		SkillRequired: MetalWelding=8,
+		Category: Smithing,
+		Tooltip: Recipe_Tooltip_Masamune,
 		NeedToBeLearn: true,
 	}
-	
+
+	recipe Craft Masamune Handle
+	{
+		Nails=10,
+		Plank,
+		SheetMetal,
+        BlowTorch=5,
+		keep [Recipe.GetItemTypes.Saw],
+		keep [Recipe.GetItemTypes.Hammer],
+        keep WeldingMask,
+
+		NearItem:Anvil,
+		Result: MasamuneHandle,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.Blacksmith25,
+		SkillRequired: Carpentry=8;Blacksmith=8,
+		Category: Smithing,
+		Tooltip: Recipe_Tooltip_Masamune,
+		NeedToBeLearn: true,
+	}
+
+    recipe Invoke Dog Goblin
+    {
+		Plank,
+		SheetMetal,
+
+	    Result:Plank,
+	    Time:50.0,
+	    Category: Dark Magic,
+	    OnCreate:TVICT_ZK.OnCreate.InvokeDoggoblin,
+	    NeedToBeLearn: true,
+    }
+
+
 }

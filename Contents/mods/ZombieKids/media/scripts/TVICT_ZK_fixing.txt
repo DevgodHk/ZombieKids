@@ -1,0 +1,28 @@
+module TVICT_ZK {
+
+    imports {
+        Base
+    }
+
+   fixing Fix Terrablade
+   {
+      Require : TerrabladePickAxe,
+      
+      Fixer : PickAxe=1,
+      Fixer : Woodglue=2; Woodwork=2,
+      Fixer : DuctTape=2,
+      Fixer : Glue=2,
+      Fixer : Scotchtape=4,
+   }
+
+   fixing Fix Masamune
+   {
+      Require : Masamune,
+
+       Fixer : Katana=1,
+       Fixer : Woodglue=2; Woodwork=2,
+       Fixer : DuctTape=2,
+       Fixer : Glue=2,
+       Fixer : Scotchtape=4,
+   }
+}

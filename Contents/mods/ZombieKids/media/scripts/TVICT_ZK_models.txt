@@ -1,0 +1,17 @@
+module TVICT_ZK {
+
+    imports {
+        Base
+    }
+
+	model Masamune
+	{
+		mesh = weapons/2handed/Masamune,
+
+		attachment world
+		{
+			offset = 0.0000 -0.1660 0.0070,
+			rotate = -180.0000 0.0000 90.0000,
+		}
+	}
+}
